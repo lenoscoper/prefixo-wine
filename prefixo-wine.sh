@@ -16,7 +16,7 @@ function exibir_ajuda() {
   echo "  informacoes    <arquivo/diretorio>  Exibir informações sobre um arquivo ou diretório."
   echo "  importar       Importar um script .sh para estender o console."
   echo "  programas      Lista programas built-in do wine."
-  echo "  dependencias   Instala dependencias usando winetricks
+  echo "  dependencias   Instala dependencias usando winetricks"
 }
 
 # Função para listar arquivos e diretórios no diretório atual
@@ -34,7 +34,7 @@ function dependencias(){
 # Função programas()
 programas() {
     echo "Escolha um programa para executar:"
-    echo "1 - WineCFG (configurações do prefixo)"
+    echo "1 - WineCFG configurações do prefixo"
     echo "2 - Gerenciador de Tarefas"
     echo "3 - Bloco de Notas"
     echo "4 - Editor de Registro"
