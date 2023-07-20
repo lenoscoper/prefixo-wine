@@ -17,7 +17,7 @@ Antes de iniciar o console simulado, o usuário será solicitado a escolher a ar
 - `informacoes <arquivo/diretorio>`: Exibe informações detalhadas sobre um arquivo ou diretório, incluindo tipo, tamanho, permissões, proprietário, grupo, último acesso e última modificação.
 - `importar <caminho_do_script.sh>`: Importa um script .sh para estender o console com novas funcionalidades.
 - `programas`: Lista os programas built-in do Wine e permite que o usuário escolha um para executar.
-
+- `dependencias`: Instala dependencias de jogos na plataforma windows.
 ## Funções
 
 O script possui as seguintes funções:
@@ -33,6 +33,9 @@ Exibe uma mensagem de boas-vindas e a lista de comandos disponíveis no console 
 ### `variaveis()`
 
 Exibe informações sobre o prefixo do Wine atual, incluindo o caminho para o prefixo, a arquitetura do prefixo Wine e o diretório de comandos built-in.
+
+### `dependencias()`
+A função instala várias bibliotecas e componentes essenciais que são comumente exigidos por jogos que estão sendo executados no Wine.
 
 ### `programas()`
 
