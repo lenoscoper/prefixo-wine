@@ -63,9 +63,19 @@ Antes de iniciar o console, o script solicitará que o usuário escolha a arquit
 chmod +x console_wine.sh
 ```
 
-1. Execute o console simulado com o seguinte comando:
+3. Execute o console simulado com o seguinte comando:
 ```bash
 ./console_wine.sh
 ```
-2. O script solicitará que você escolha a arquitetura do Wine (Win32 ou Win64). Digite o número correspondente e pressione Enter.
-3. O console simulado será iniciado e você poderá digitar os comandos disponíveis.
+4. O script solicitará que você escolha a arquitetura do Wine (Win32 ou Win64). Digite o número correspondente e pressione Enter.
+5. O console simulado será iniciado e você poderá digitar os comandos disponíveis.
+
+### **Observações**
+
+* Para que o console funcione corretamente, certifique-se de ter o ambiente Wine devidamente instalado em seu sistema.
+* Além dos comandos disponíveis no console, você também pode executar outros comandos diretamente no shell do sistema, pois eles serão interpretados e executados normalmente.
+* Para sair do console simulado, basta digitar o comando sair.
+
+Lembre-se de que o ambiente Wine pode ter algumas peculiaridades e limitações, e nem todos os programas Windows podem ser executados sem problemas. Certifique-se de entender as implicações do uso do Wine em seu sistema e esteja ciente dos programas compatíveis antes de executá-los no ambiente Wine.
+
+Divirta-se usando o Console Interativo Prefixo-Wine!
