@@ -1,4 +1,4 @@
-# Documentação do Console Simulado Prefixo-Wine
+# Documentação do Console Interativo Prefixo-Wine
 
 ## Descrição
 
