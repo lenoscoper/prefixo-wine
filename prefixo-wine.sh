@@ -9,13 +9,14 @@ function exibir_prompt() {
 function exibir_ajuda() {
   echo "Bem-vindo ao console simulado."
   echo "Comandos disponíveis:"
-  echo "  ajuda       Exibir esta mensagem de ajuda."
-  echo "  limpar      Limpar a tela."
-  echo "  sair        Sair do console."
+  echo "  ajuda          Exibir esta mensagem de ajuda."
+  echo "  limpar         Limpar a tela."
+  echo "  sair           Sair do console."
   echo "  variaveis      Listar variaveis do prefixo wine atual."
-  echo "  informacoes <arquivo/diretorio>  Exibir informações sobre um arquivo ou diretório."
-  echo "  importar    Importar um script .sh para estender o console."
-  echo "  programas   Lista programas built-in do wine."
+  echo "  informacoes    <arquivo/diretorio>  Exibir informações sobre um arquivo ou diretório."
+  echo "  importar       Importar um script .sh para estender o console."
+  echo "  programas      Lista programas built-in do wine."
+  echo "  dependencias   Instala dependencias usando winetricks
 }
 
 # Função para listar arquivos e diretórios no diretório atual
@@ -23,6 +24,11 @@ function variaveis() {
   echo "O caminho para o prefixo é $WINEPREFIXO"
   echo "A arquitetura do prefixo wine é: $WINEARQUI"
   echo "O diretorio de commandos built-in é: $WINEARCHCOMMAND"
+}
+
+# Funcao para instalar as dependencias wine para maioria dos jogos
+function dependencias(){
+  WINEPREFIX=${WINEPREFIXO} WINEARCH=${WINEARQUI} winetricks --unattended dotnet20 dotnet35 dotnet40 dotnet452 dotnet46 dotnet461 dotnet462 dotnet471 dotnet472 dotnet48 d3dcompiler_43 d3dcompiler_47 d3dx9 d3dx10 d3dx11_42 d3dx11_43 xna40 directshow directplay faudio vcrun2003 vcrun2005 vcrun2008 vcrun2010 vcrun2012 vcrun2013 vcrun2015
 }
 
 # Função programas()
