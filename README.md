@@ -59,11 +59,13 @@ Antes de iniciar o console, o script solicitará que o usuário escolha a arquit
 1. Salve o código do script em um arquivo chamado `console_wine.sh`.
 2. No terminal, navegue até o diretório onde o arquivo `console_wine.sh` foi salvo.
 3. Torne o arquivo executável com o seguinte comando:
-
 ```bash
 chmod +x console_wine.sh
 ```
 
 1. Execute o console simulado com o seguinte comando:
+```bash
+./console_wine.sh
+```
 2. O script solicitará que você escolha a arquitetura do Wine (Win32 ou Win64). Digite o número correspondente e pressione Enter.
 3. O console simulado será iniciado e você poderá digitar os comandos disponíveis.
